@@ -1,0 +1,3 @@
+Project of course is an implementation of design pattern named PRG.
+PRG is one of many design patterns used in web development. It is used to prevent the resubmission of a form caused by reloading the same web page after submitting the form. It removes redundancy of content to strengthen the SEO and makes the website user friendly.
+   It is used by large, trusted online shops and other robust websites which are intended to be user friendly.
