@@ -1,0 +1,5 @@
+With PRG the browser ends up making two requests. The first request is a POST request and is typically used to modify data. The server responds with a Location header in the response and no HTML in the body. This causes the browser to be redirected to a new URL. The browser then makes a GET request to the new URL which responds with HTML content which the browser renders.
+
+I'll try to explain why PRG should be used. The GET method is never supposed to modify data. When a user clicks a link the browser or proxy server may return a cached response and not send the request to the server; this means the data wasn't modified when you wanted it to be modified. Also, a POST request shouldn't be used to return data because if the user wants to just get a fresh copy of the data they're forced to re-execute the request which will make the server modify the data again. This is why the browser will give you that vague dialog asking you if you are sure you want to re-send the request and possibly modify data a second time or send an e-mail a second time.
+
+PRG is a combination of POST and GET that uses each for what they are intended to be used for.
